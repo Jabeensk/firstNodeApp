@@ -7,9 +7,9 @@ const port = 3000;
 
 const server = http.createServer((req, res) => {
   try{ 
-    // Your existing route logic
+    
     if (req.url === '/error') {
-      // Intentional Error (for demonstration purposes)
+      
       throw new Error('This is an intentional error!');
     }
     res.statusCode = 200;
